@@ -12,7 +12,6 @@ const PORT = process.env.PORT || 5000;
 app.use(bp.urlencoded({extended:false}));
 
 
-//API key Publishable API Token: pk_09999b51fa1e49569e5ccd99f02e4a75
 //call api function
 function call_api(finished,ticker){ 
 request('https://cloud.iexapis.com/stable/stock/'+ ticker +'/quote?token=pk_09999b51fa1e49569e5ccd99f02e4a75', {json:true},(err,res,body)=>{
