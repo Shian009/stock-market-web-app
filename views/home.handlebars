@@ -1,2 +1,11 @@
-<h1>shiva</h1>
-<p>{{stuff}}</p>
+<div class="jumbotron">
+  <h1 class="display-4">{{ stuff.companyName}} ({{stuff.symbol}})</h1>
+  <p class="lead"><strong>Latest Price: </strong>${{stuff.latestPrice }}<br>
+<strong>Previous Close: </strong>${{stuff.previousClose}}<br>
+<strong>Change Percent : </strong>{{stuff.changePercent }}%<br>
+<strong>Market Cap : </strong>${{stuff.marketCap }}<br>
+<strong>YTD Change : </strong>{{stuff.ytdChange }}%<br>
+<strong>52wk High : </strong>{{stuff.week52High }}<br>
+<strong>52wk Low : </strong>{{stuff.week52Low }}<br></p>
+  <hr class="my-4">
+</div>
